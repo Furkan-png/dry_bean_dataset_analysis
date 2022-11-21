@@ -1,2 +1,6 @@
-# dry_bean_dataset_analysis
-Analysis the dry bean dataset with DecisionTreeClassifier. Dataset is available in uci machine learning website.
+# Dry Bean Dataset Analysis
+
+
+# Here is the link of dataset: **https://archive.ics.uci.edu/ml/datasets/Dry+Bean+Dataset**
+
+
