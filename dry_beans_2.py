@@ -26,12 +26,10 @@ data = pd.read_excel('Dry_Bean_Dataset.xlsx')
 X = data.iloc[:, 0:16]
 y = data.iloc[:, 16]
 
-o1 = data.iloc[:, 1:3]
-o2 = data.iloc[:, 7:16]
-
-#X = pd.concat([o1, o2], axis=1)
-
-# print(X.head())
+# o1 = data.iloc[:, 1:8]  # This attributes chosed by RFE method
+# o2 = data.iloc[:, 11:14]
+# o3 = data.iloc[:, 14]
+# X = pd.concat([o1, o2, o3], axis=1)
 
 ros = RandomOverSampler()
 
