@@ -5,7 +5,7 @@
 
 ---
 
-I analyzed this dataset with DecisionTreeClassifier. I also used some preprocess functions.
+I analyzed this dataset with --. I also used some preprocess functions.
 
 I am going to give 2 experiment about this analysis for the first time. I am going to add other experiments when I try them.
 
