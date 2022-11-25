@@ -176,31 +176,63 @@ Thank you for your time.
    
 ### Experiment - 2
 
-> In this experiment I used RandomOverSampler to imbalance classes. Other methods are same with previous experiment.
+> In this experiment I used RandomOverSampler to imbalance classes. Other methods are same with previous experiment. Feature selection results may vary but I will give them in anyway.
 
 - *Confusion Matrix*
 
-  **[[633   0  50   0   4   6  12]<br />
- [  0 729   0   0   0   0   0]<br />
- [ 37   0 647   0  13   0   5]<br />
- [  0   0   0 633   3  15  35]<br />
- [  4   0  11   8 705   0  17]<br />
- [  1   0   0  14   0 668  16]<br />
- [  7   0   1  67   5  16 603]]**
+  **[[672   0  17   0   3   1  12]<br />
+ [  0 729   0   0   0   0   0]]<br />
+ [  8   0 682   0   7   0   5]]<br />
+ [  0   0   0 636   2  12  36]]<br />
+ [  4   0   3   6 715   0  17]]<br />
+ [  0   0   0   9   0 679  11]]<br />
+ [  2   0   0  60   4   3 630]]**
   
 - *Accuracy Score* 
   
-  **0.9301107754279959**
+  **0.9552870090634441**
   
 - *Macro F1 Score* 
   
-  **0.9294272637358352**
+  **0.9549815177220005**
 
 - *get_support()*
 
-  [ True  True  True False False False False False  True False  True]
+  [ True  True False  True False False  True False False False  True  True
+  True  True False False]
   
 - *get_rankings_*
   
-  [1 1 1 6 4 5 3 2 1 7 1]
+  [1 1 2 1 5 9 1 8 6 4 1 1 1 1 7 3]
+
+### Experiment - 3
+
+> Experiment 3 involves FeatureSelection features unlike the previous experiments. Also in this experiment features which are selected by RFE algorithm badly affected the results. 
+
+- *Confusion Matrix*
+
+  **[[632   0  49   0   6   6  12]< /br>
+ [  1 728   0   0   0   0   0]< /br>
+ [ 22   0 659   0  13   3   5]< /br>
+ [  0   0   0 629   2  15  40]< /br>
+ [  4   0   9   7 712   0  13]< /br>
+ [  1   0   0  12   0 670  16]< /br>
+ [  1   0   0  79   5  17 597]]**
+  
+- *Accuracy Score* 
+  
+  **0.9319234642497483**
+  
+- *Macro F1 Score* 
+  
+  **0.9311865965143975**
+
+- *get_support()*
+
+  [False False  True False False  True False  True  True  True False]
+  
+- *get_rankings_*
+  
+  [3 4 1 5 7 1 2 1 1 1 6]
+
 
