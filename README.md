@@ -140,3 +140,67 @@ Thank you for your time.
 - *get_rankings_*
   
   [1 1 1 6 4 5 3 2 1 7 1]
+  
+  ---
+  
+  ### Experiment - 1 - XGBoostClassifier
+
+> This experiment made with XGBoostClassifier algorithm to get better metric values. The prepocess and train test split transactions I used same methods as previous experiments. Experiment - 1 includes just LabelEncoder and StandardScaler. In next experiments I will add more methods to get better values.
+
+- *Confusion Matrix*
+
+  **[[238   0  21   0   3   4   5]<br />
+ [  0 104   0   0   0   0   0]<br />
+ [  6   0 320   0   1   2   7]<br />
+ [  0   0   0 651   1   6  39]<br />
+ [  0   0   6   2 353   0   9]<br />
+ [  3   0   0  16   0 398  10]<br />
+ [  2   0   0  47   8   2 459]]**
+  
+- *Accuracy Score* 
+  
+  **0.9265515975027543**
+  
+- *Macro F1 Score* 
+  
+  **0.936949897623269**
+
+- *get_support()*
+
+  [ True  True  True  True False False  True False False False  True  True
+  True False False False]
+  
+- *get_rankings_*
+  
+  [1 1 1 1 3 9 1 8 6 5 1 1 1 2 7 4]
+   
+### Experiment - 2
+
+> In this experiment I used RandomOverSampler to imbalance classes. Other methods are same with previous experiment.
+
+- *Confusion Matrix*
+
+  **[[633   0  50   0   4   6  12]<br />
+ [  0 729   0   0   0   0   0]<br />
+ [ 37   0 647   0  13   0   5]<br />
+ [  0   0   0 633   3  15  35]<br />
+ [  4   0  11   8 705   0  17]<br />
+ [  1   0   0  14   0 668  16]<br />
+ [  7   0   1  67   5  16 603]]**
+  
+- *Accuracy Score* 
+  
+  **0.9301107754279959**
+  
+- *Macro F1 Score* 
+  
+  **0.9294272637358352**
+
+- *get_support()*
+
+  [ True  True  True False False False False False  True False  True]
+  
+- *get_rankings_*
+  
+  [1 1 1 6 4 5 3 2 1 7 1]
+
