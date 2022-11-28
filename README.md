@@ -235,4 +235,69 @@ Thank you for your time.
   
   [3 4 1 5 7 1 2 1 1 1 6]
 
+### Experiment - 1 - Support Vector Classifier (SVC from SVM)
+
+> Today I am analyzing again same dataset. Today's algorithm is Support Vector Classifier from SVM. I am not going to use feature selection for beginning. In this experiment I tried training without scaling and it's made massive difference than the previous models.
+
+- *Confusion Matrix*
+
+  **[[ 12   0 187   0  60   0  12]<br />
+ [  0 104   0   0   0   0   0]]<br />
+ [ 10   0 297   0  26   0   3]]<br />
+ [  0   0   0 606   0  71  20]]<br />
+ [  8   0  25   8 188  15 126]]<br />
+ [  0   0   0 145  15 103 164]]<br />
+ [  0   0   0  24  35  51 408]]**
+  
+- *Accuracy Score* 
+  
+  **0.6309217774513405**
+  
+- *Macro F1 Score* 
+  
+  **0.5863603166078509**
+
+### Experiment - 2
+
+> Unlike the previous experiment I used Scaling and see the difference on metrics. 
+
+- *Confusion Matrix*
+
+  **[[214   0  40   0   2   4  11]<br />
+ [  0 104   0   0   0   0   0]<br />
+ [  6   0 320   0   3   2   5]<br />
+ [  0   0   0 643   1   7  46]<br />
+ [  0   0   5   3 353   0   9]<br />
+ [  2   0   0  13   0 386  26]<br />
+ [  0   0   1  49   6   5 457]]**
+  
+- *Accuracy Score* 
+  
+  **0.9096584649283878**
+  
+- *Macro F1 Score* 
+  
+  **0.9196135603363059**
+
+### Experiment - 3
+
+> For the last experiment I used Over Sampler for imbalance classes. DERMASON and BOMBAY classes are that imbalance classes. I used ROS (Random Over Sampler) from imblearn library.
+
+- *Confusion Matrix*
+
+  **[[603   1  62   0   4   6  29]<br/>
+ [  0 729   0   0   0   0   0]<br/>
+ [ 27   0 649   0  11   2  13]<br/>
+ [  0   0   0 619   2  16  49]<br/>
+ [  1   0  10   9 702   0  23]<br/>
+ [  2   0   0  10   0 665  22]<br/>
+ [  1   0   1  48   4  16 629]]**
+  
+- *Accuracy Score* 
+  
+  **0.9256797583081571**
+  
+- *Macro F1 Score* 
+  
+  **0.9252603274877432**
 
