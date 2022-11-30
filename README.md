@@ -301,3 +301,46 @@ Thank you for your time.
   
   **0.9252603274877432**
 
+### Experiment - 1 - KNeighbors Classifier
+
+> In this experiment I used KNegihbors Classifier for Dry Beans Dataset. I am tried to get more accuracy in every experiment. In first experiment I didn't use scaling method 
+
+- *Confusion Matrix*
+
+  **[[133   0 107   0  18   0  13]<br />
+ [  0 104   0   0   0   0   0]<br />
+ [ 39   1 284   0   8   1   3]<br />
+ [  0   0   0 648   0   9  40]<br />
+ [ 10   0  23  13 282   0  42]<br />
+ [  1   0   0  31   2 331  62]<br />
+ [  1   0   0  59  11   6 441]]**
+  
+- *Accuracy Score* 
+  
+  **0.8163789937568858**
+  
+- *Macro F1 Score* 
+  
+  **0.8131287082670368**
+
+### Experiment - 2
+
+> Unlike the previous experiment I used Scaling and see the difference on metrics. 
+
+- *Confusion Matrix*
+
+  **[[214   0  40   0   2   4  11]<br />
+ [  0 104   0   0   0   0   0]<br />
+ [  6   0 320   0   3   2   5]<br />
+ [  0   0   0 643   1   7  46]<br />
+ [  0   0   5   3 353   0   9]<br />
+ [  2   0   0  13   0 386  26]<br />
+ [  0   0   1  49   6   5 457]]**
+  
+- *Accuracy Score* 
+  
+  **0.9096584649283878**
+  
+- *Macro F1 Score* 
+  
+  **0.9196135603363059**
